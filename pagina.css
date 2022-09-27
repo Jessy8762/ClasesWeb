@@ -477,10 +477,8 @@ padding-top: 39%;
 }
 .fotosenora
 {
-        background-image: url('https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e83fe3910db4fde2e69f396_christiann-koepke-dQyS2pMYtok-unsplash%20(1).jpg');
-    position: relative;
-    width: 50%;
-    height: 50%;
+        background-image: url("https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e83fe3910db4fde2e69f396_christiann-koepke-dQyS2pMYtok-unsplash%20(1).jpg");
+    width: 50px;
 }
 footer
 {
