@@ -1,0 +1,492 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+}
+
+:root
+{
+--primary-color: #eb5757;
+--secondary-color: #222;
+--light-color: #f9f9f9;
+--dark-color: #333;
+}
+
+header
+{
+    background-color: var(--primary-color);
+    position: fixed;
+    width: 100vw;
+    height: 150px;
+    z-index: 2;
+}
+
+header .covid
+{
+    background-color: var(--secondary-color);
+    width: 100vw;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-color);
+    gap: 10px;
+}
+
+header .covid button
+{
+    background-color: var(--primary-color);
+    width: 140px;
+    height: 30px;
+    border-radius: 17px;
+    border: none;
+    color: var(--light-color);
+}
+
+header .covid p
+{
+font-size: 18px;
+}
+
+header .menu
+{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 500px;
+    color: var(--light-color);
+}
+
+header .menu div
+{
+    width: 600px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu div a
+{
+    height: 35px;
+    width: 70px;
+    padding-top: 8px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--light-color);
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+
+header .menu div a:hover{
+    background-color: var(--secondary-color);
+}
+
+header .menu div button
+{
+    width: 45px;
+    height: 35px;
+    background-color: var(--secondary-color);
+    background-image: url(https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e86146bb854797d12a30a13_cart.svg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    border: none;
+    border-radius: 5px;
+    background-position: center;
+    position: relative;
+}
+
+header .menu div button span
+{
+    width: 20px;
+    height: 20px;
+    padding-top: 2px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    left: 35px;
+    text-align: center;
+    background-color: var(--light-color);
+}
+
+/*Especificando que el relative se debe aplicar a toda la sección y se adecue a las posiciones*/
+main section
+{
+    position: relative;
+    
+}
+/*Fondo del Main donde se encuentra el background image con su respectivo degradado con la caracteristica de linear-gradient*/
+main
+{
+    /* background-image: url(https://images.unsplash.com/photo-1492133969098-09ba49699f47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80);*/
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('https://images.unsplash.com/photo-1492133969098-09ba49699f47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80');
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/*Posiciones de los textos y el botón asignando padding de arriba y la izquierda asimismo como tamaño de font y color predeterminado*/
+main section h1
+{
+    padding-top: 280px;
+    padding-left: 80px;
+    color: var(--light-color);
+    font-size: 60px;
+    position: relative;
+   
+}
+main section p
+{
+    padding-top: 15px;
+    padding-left: 80px;
+    color: var(--light-color);
+    font-size: 17px;
+}
+main section button
+{
+    position: relative;
+    top: 6vh;
+    left: 6vw;
+    background-color: transparent;
+    border-color: var(--light-color);
+    border-radius: 5px;
+    color: var(--light-color);
+    font-size: 15px;
+    width: 135px;
+    height: 37px;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+main section button:hover
+{
+    background-color: var(--light-color);
+    color: var(--secondary-color);
+}
+
+/*Aqui comienza la sección 2*/
+.section2
+{
+    color: #222;
+    padding-top: 28vh;
+}
+.div1 p span
+{
+font-size: 15px;
+color: var(--dark-color);
+padding-left: 1vw;
+}
+.h22
+{
+    font-size: 40px;
+    padding-left: 6.5vw;
+    color: var(--dark-color);
+}
+.pcovid2
+{
+    color: var(--secondary-color);
+    font-size: 16px;
+    padding-left: 50vw;
+    bottom: 80px;
+    position: relative;
+}
+.articles
+{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 95vw;
+   height: 100vh;
+   padding-bottom: 40vh;
+   padding-left: 100px;
+   padding-right: 15px;
+}
+.articles article div
+{
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+}
+.article1
+{
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    border-radius: 5px;
+}
+.span1
+{
+    font-size: 35px;
+    padding-left: 25px;
+    margin-top:  25px;
+    position: absolute;
+}
+
+.articles div h3
+{
+font-size: 35px;
+text-align: center;
+padding-left: 4%;
+padding-top: 39%;
+}
+
+.article1p
+{
+    color: var(--secondary-color);
+    font-size: 13.6px;
+    right: 55px;
+   position: relative;
+}
+
+/*Aqui comienza la sección 3*/
+.section3
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('https://images.unsplash.com/photo-1511225070737-5af5ac9a690d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    /*background-image: url(https://images.unsplash.com/photo-1511225070737-5af5ac9a690d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);*/
+    position: relative;
+    bottom: 200px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    Clip-path: inset(50px 0px 0px 0px);
+}
+.section3 h2
+{
+    padding-top: 35vh;
+    color: var(--light-color);
+    font-size: 40px;
+    text-align: right;
+   margin-right: 90px;
+}
+.section3 p
+{
+    text-align: right;
+    margin-right: 90px;
+}
+.section3 button
+{
+    left: 76vw;
+    width: 210px;
+    background-color: var(--light-color);
+    color: var(--secondary-color);
+    transition: all 0.5s ease;
+}
+.section3 button:hover
+{
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border-color: var(--primary-color);
+}
+
+/*Aqui comienza la sección 4*/
+.section4
+{
+    bottom: 20vh;
+}
+.section4 p span
+{
+   color: var(--secondary-color);
+}
+.section4h2
+{
+    color: var(--dark-color);
+    font-size: 37px;
+    margin-left: 7%;
+    margin-top: 10px;
+}
+
+.sectionarticulos4
+{
+    left: 85px;
+    top: 120px;
+    position: absolute;
+}
+.section4articles
+{
+   display: inline-block;
+   align-items: center;
+   justify-content: space-between;
+   margin-left: 10px;
+   margin-right: 1px;
+    
+}
+.producto1
+{
+    background-color: #222;
+    height: 492px;
+    width: 380px;
+    border-radius: 5px;
+    background-image: url(https://www.campingred.net/wp-content/uploads/2018/08/mirando-el-lago.jpg);
+   background-repeat: no-repeat;
+   background-position-x: center;
+}
+.producto2
+{
+    background-color: #222;
+    height: 492px;
+    width: 380px;
+    border-radius: 5px;
+    background-image: url(https://images.unsplash.com/photo-1489693755295-4a1efc9e7f72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80);
+   background-repeat: no-repeat;
+  background-size: 235%;
+  background-position: center;
+
+   
+}
+.producto3
+{
+    
+   background-color: #222;
+   height: 492px;
+   width: 380px;
+   border-radius: 5px;
+   background-image: url(https://uploads-ssl.webflow.com/607e9645059d106ddda79cfc/607e9645059d106a21a79d00_denisse-leon-J7CjWufjmg4-unsplash.jpg);
+  background-repeat: no-repeat;
+ background-size: 235%;
+ background-position: center;
+
+}
+.carpatitulo
+{
+    position: relative;
+    padding-left: 9.5vw;
+    top: 500px;
+    color: var(--secondary-color);
+
+}
+.carpa
+{
+    position: relative;
+    padding-left: 9.7vw;
+    top: 490px;
+    font-size: 14px;
+    color: var(--dark-color);
+}
+.tazatitulo
+{
+    position: relative;
+    padding-left: 7.5vw;
+    top: 500px;
+    color: var(--secondary-color);
+
+}
+.taza
+{
+    position: relative;
+    padding-left: 10.2vw;
+    top: 490px;
+    font-size: 14px;
+    color: var(--dark-color);
+}
+.mochilatitulo
+{
+    position: relative;
+    padding-left: 7.5vw;
+    top: 500px;
+    color: var(--secondary-color);
+
+}
+.mochila
+{
+    position: relative;
+    padding-left: 6.5vw;
+    top: 490px;
+    font-size: 14px;
+    color: var(--dark-color);
+}
+.section4articles span
+{
+    color: var(--primary-color);
+    text-decoration: line-through;
+}
+.botondetalles
+{
+    position: relative;
+    left: 9.3vw;
+    top: 75vh;
+    width: 115px;
+    background-color: var(--primary-color);
+    transition: all 0.5 ease-in;
+}
+.botondetalles:hover
+{
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--light-color);
+}
+.botonarticulos
+{
+    position: relative;
+    left: 37vw;
+    top: 21vh;
+    width: 185px;
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transition: all 0.5 ease-in;
+}
+.botonarticulos:hover
+{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--light-color);
+}
+.sale
+{
+    position: relative;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    width: 75px;
+    height: 33px;
+    padding-top: 8px;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    left: 85vw;
+    top: 35px;
+}
+/*Aqui comienza la sección 5*/
+.section5
+{
+    position: relative;
+    top: 650px;
+    background-color: var(--secondary-color);
+    width: 70%;
+    margin-left: 23vw;
+    height: 79%;
+    border-radius: 5px;
+}
+.section5 div h2
+{
+    font-size: 40px;
+    color: var(--light-color);
+    text-align: center;
+    padding-top: 5%;
+}
+.section5 div p
+{
+    font-size: 16px;
+    color: var(--light-color);
+    margin-left: 28%;
+    margin-right: 5%;
+    
+}
+.fotosenora
+{
+        background-image: url('https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e83fe3910db4fde2e69f396_christiann-koepke-dQyS2pMYtok-unsplash%20(1).jpg');
+    position: relative;
+    width: 50%;
+    height: 50%;
+}
+footer
+{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    top: 3000px;
+    background-color: var(--secondary-color);
+}
