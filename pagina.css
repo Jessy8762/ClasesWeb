@@ -21,7 +21,7 @@ header
     position: fixed;
     width: 100vw;
     height: 150px;
-    z-index: 2;
+    z-index: 3;
 }
 
 header .covid
@@ -459,6 +459,7 @@ padding-top: 39%;
     margin-left: 23vw;
     height: 79%;
     border-radius: 5px;
+    z-index: 1;
 }
 .section5 div h2
 {
@@ -475,10 +476,27 @@ padding-top: 39%;
     margin-right: 5%;
     
 }
-.fotosenora
+.fotodesenora
 {
         background-image: url("https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e83fe3910db4fde2e69f396_christiann-koepke-dQyS2pMYtok-unsplash%20(1).jpg");
-    width: 50px;
+    /*
+    height: 440px;width: 350px;
+    position: absolute;
+    left: 6vw;
+    top: 457vh;
+    z-index: 2;
+    border-radius: 5px;
+    background-position-x: center; */
+    position: absolute;
+    top: 458%;
+    left: 10%;
+    width: 25%;
+    height: 65%;
+    border-radius: 5px;
+    z-index: 1;
+    background-size: 250%;
+    background-position: 70% 90%;
+    background-repeat: no-repeat;
 }
 footer
 {
@@ -488,4 +506,51 @@ footer
     top: 3000px;
     background-color: var(--secondary-color);
 }
+.iconofooter
+{
+    /* background-image: url(https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg); */
+    z-index: 1;
+    position: absolute;
+    top: 38%;
+    left: 7%;
+}
+.twitter
+{
+    height: 31px;
+    width: 31px;
+    right: 14%;
+    top: 34%;
+    position: absolute;
+    background-color: var(--light-color);
+    border-radius: 5px;
+}
+.facebook
+{
+    height: 32px;
+    width: 32px;
+    right: 10%;
+    top: 34%;
+    position: absolute;
+    background-color: var(--light-color);
+    border-radius: 100px;
+}
+.instagram
+{
+    height: 32px;
+    width: 32px;
+    right: 6%;
+    top: 34%;
+    position: absolute;
+   filter: invert(100%);
+}
+footer div p
+{
+    font-size: 11px;
+    color: var(--light-color);
+    position: relative;
+    text-align: center;
+    padding-top: 13%;
+}
 /*otro estilo mas chido*/
+/*COMENTARIO*/
+/*sssssssss*/
